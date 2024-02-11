@@ -1,0 +1,25 @@
+// 1. For Compatibility table among browsers and engines :
+    https://caniuse.com 
+    https://kangax.github.io/compat-table
+
+2. $ and _ can also be used in naming variables
+/////////////////////////////////////////////////////
+
+3. NaN (not a number) is sticky, Any further mathematical
+ operation on NaN returns NaN:
+ console.log(alert( 3 * NaN ); // NaN);
+Only exception    NaN ** 0 is 1
+
+4.For null returns "object" – this is an error in the language, it’s not actually an object.
+///////////////////////////////////////////////////////////
+0 is always true in JS
+///////////////////////////////////////////////////////////
+5.Increment/decrement can only be applied to variables. Trying to use it on a value like 5++ will give an error.
+//////////////////////////////////////////////////////////
+6.Comparison operators uses numeric conversion while converting
+let a = 0;
+let b = "0";
+a==b //true
+
+NaN return false for all comparisons
+ 
