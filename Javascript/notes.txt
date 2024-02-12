@@ -21,3 +21,56 @@ a==b //true
 
 NaN return false for all comparisons
  
+////////////////////////////////////////////////////////////
+A label is an identifier with a colon before a loop:
+
+first:for(let i=0;i<3;i++){
+    second:for(let j=1;j<5;j++){
+        if(j==3)break first;
+    }
+
+}
+
+/////////////////////////////////////////////////////////////
+in switch statements cases can be grouped if they re similar
+case 3: // (*) grouped two cases
+case 5:
+    alert('Wrong!');
+    alert("Why don't you take a math class?");
+    break;
+/////////////////////////////////////////////////////////
+Function Declarations is within code block,visible everywhere inside block , but not visible in outside
+let age = 16; // take 16 as an example
+
+if (age < 18) {
+  welcome();               // \   (runs)
+                           //  |
+  function welcome() {     //  |
+    alert("Hello!");       //  |  Function Declaration is available
+  }                        //  |  everywhere in the block where it's declared
+                           //  |
+  welcome();               // /   (runs)
+
+} else {
+
+  function welcome() {
+    alert("Greetings!");
+  }
+}
+
+// Here we're out of curly braces,
+// so we can not see Function Declarations made inside of them.
+
+welcome(); // Error: welcome is not defined
+
+to avoid this use Function Expressions
+let welcome;
+
+if (age < 18) {
+
+  welcome = function() {
+    alert("Hello!");
+  };
+welcome()
+}
+or ternary operator
