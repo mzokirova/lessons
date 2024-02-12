@@ -12,8 +12,6 @@ Only exception    NaN ** 0 is 1
 
 4.For null returns "object" – this is an error in the language, it’s not actually an object.
 ///////////////////////////////////////////////////////////
-0 is always true in JS
-///////////////////////////////////////////////////////////
 5.Increment/decrement can only be applied to variables. Trying to use it on a value like 5++ will give an error.
 //////////////////////////////////////////////////////////
 6.Comparison operators uses numeric conversion while converting
