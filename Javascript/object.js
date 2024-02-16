@@ -42,3 +42,7 @@ let clone = structuredClone(obj);
 
 // Arrow function doesnt have this
 
+// for ..in, Object.keys() cannot iterate over symbols, there are not shown
+// Object.getOwnPropertySymbols(obj)  Reflect.ownKeys(obj)  returns symbols
+
+
